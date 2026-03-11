@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.sedan-box,
+.suv-box {
+  display: inline-block;
+  background-color: #112240;
+  padding: 15px 35px;
+  border-radius: 4px;
+  border: 1px solid #1e3a8a;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.sedan-box a,
+.suv-box a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  font-family: "Segoe UI", sans-serif;
+}
+.car-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+.head {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-style: italic;
+  color: #1e3a8a;
+  padding: 20px;
+}
+
+.sedan-box:hover,
+.suv-box:hover {
+  background-color: #eb0a1e;
+  border-color: #eb0a1e;
+  box-shadow: 0 5px 15px rgba(235, 10, 30, 0.3);
+}
+
+.sedan-box:hover a,
+.suv-box:hover a {
+  color: #ffffff;
+}
+
+.sedan-box:active,
+.suv-box:active {
+  transform: scale(0.95);
+}
+
+.cars-conatiner {
+  padding: 80px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.car-slides {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.car-container {
+  position: relative;
+  width: 100%;
+  background-color: rgba(14, 13, 13, 0.293);
+  max-width: 550px;
+  height: 292px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.car-container:hover {
+  transform: translateY(-5px);
+}
+
+.car-image {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.car-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transform: translateX(-10px);
+}
+.grande img {
+  width: 300px;
+}
+
+.car-text {
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 35px 30px;
+  width: 280px;
+  height: 287px;
+  z-index: 2;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.car-text .name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: -0.5px;
+}
+
+.car-text h2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #bbb;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.car-text h1:last-of-type {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #888;
+}
+
+.car-text h1 span {
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.car-text a {
+  display: inline-block;
+  margin-top: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+.car-text a:hover {
+  color: #eb0a1e;
+  border-color: #eb0a1e;
+}
+
+.advantages-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantage-card {
+  background: #fdfdfd;
+  padding: 40px 30px;
+  border: 1px solid #eee;
+  text-align: left;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage-card:hover {
+  background: #0e0958;
+  color: #fff;
+  border-color: #241370;
+  transform: translateY(-10px);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.advantage-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.advantage-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.advantage-card:hover p {
+  color: #ccc;
+}
+
+.read-more {
+  color: #eb0a1e;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+.advantage-card:hover .read-more {
+  color: #fff;
+  border-color: #fff;
+}
+
+.suv {
+  display: none;
+}
+.sedan-box {
+  background-color: red;
+  border: none;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 992px) {
+  .car-container {
+    max-width: 450px;
+    height: 300px;
+  }
+  .car-text {
+    width: 240px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-container {
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .car-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .car-image img {
+    transform: translateX(0);
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .car-text {
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .car-text a {
+    margin-bottom: 10px;
+  }
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .advantages-section {
+    padding: 60px 20px;
+  }
+
+  .advantage-card {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 450px) {
+  .car-selection {
+    flex-direction: column;
+    max-width: 200px;
+  }
+  .sedan-box {
+    margin-bottom: 20px;
+  }
+  .head {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .car-selection {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+}

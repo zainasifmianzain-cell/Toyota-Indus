@@ -1,0 +1,240 @@
+:root {
+  --deep-navy: #ffffff;
+  --sapphire-blue: #f8fafc;
+  --ocean-blue: #f1f5f9;
+  --electric-blue: #0077b6;
+  --soft-cyan: #001d3d;
+  --toyota-red: #eb0a1e;
+  --text-main: #334155;
+}
+
+body {
+  background-color: var(--deep-navy);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-main);
+}
+
+/* --- Entrance Keyframes ---  */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowBorder {
+  0% {
+    border-color: rgba(0, 119, 182, 0.2);
+  }
+  50% {
+    border-color: rgba(0, 119, 182, 0.6);
+  }
+  100% {
+    border-color: rgba(0, 119, 182, 0.2);
+  }
+}
+
+.contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: revealUp 0.8s ease forwards;
+}
+
+.contact-header h2 {
+  font-size: 2.8rem;
+  color: var(--soft-cyan);
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #e2e8f0;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: revealUp 0.8s ease forwards;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.info-item:hover {
+  transform: scale(1.03) translateX(10px);
+  background: #f1f5f9;
+  border-color: var(--electric-blue);
+}
+
+.info-item h4 {
+  color: var(--electric-blue);
+  margin: 0;
+}
+.info-item p {
+  color: var(--text-main);
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  flex: 1.5;
+  background: #fff;
+  padding: 45px;
+  border-radius: 25px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background: var(--ocean-blue);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  color: var(--soft-cyan);
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--electric-blue);
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 119, 182, 0.1);
+}
+
+.send-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--soft-cyan);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.send-btn:hover {
+  background: var(--toyota-red);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(235, 10, 30, 0.2);
+}
+
+.footer-bottom {
+  padding: 80px 20px;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+}
+
+.footer-title {
+  color: var(--soft-cyan);
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.map-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #e2e8f0;
+  animation: glowBorder 4s infinite;
+  transition: transform 0.4s ease;
+}
+
+.map-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--soft-cyan);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+  margin-top: 25px;
+}
+.social-icon {
+  margin-inline: 12px;
+}
+.social-icon:hover {
+  transform: translateY(-10px) rotate(360deg);
+  background: var(--toyota-red);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Responsiveness ---*/
+@media (max-width: 992px) {
+  .contact-wrapper,
+  .footer-container {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+  .contact-header h2 {
+    font-size: 2rem;
+  }
+  .contact-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

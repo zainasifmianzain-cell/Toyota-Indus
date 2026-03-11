@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota Indus--Cars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cars.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./images/toyotaLogo.png" alt="Toyota Logo" />
+        </div>
+
+        <input type="checkbox" id="nav-check" />
+        <label for="nav-check" class="nav-toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="links">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+              <a href="cars.html">Cars</a>
+              <a href="sales.html">After Sales</a>
+              <a href="career.html">Careers</a>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icons">
+          <div class="search-container">
+            <div class="search-box-aesthetic">
+              <input type="text" placeholder="Explore models..." />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="head">Toyota Indus Cars-Limited</h1>
+    <div class="car-selection">
+      <div onclick="showsedan()" class="sedan-box">
+        <a>Cars & Mvps</a>
+      </div>
+
+      <div onclick="showsuv()" class="suv-box">
+        <a>Suvs & Pickups</a>
+      </div>
+    </div>
+
+    <section class="cars-conatiner sedan">
+      <div class="car-slides">
+        <div
+          class="car-container"
+          data-id="grande"
+          onclick="goToDetails('grande')"
+        >
+          <div class="car-image grande">
+            <img src="./images/grande.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Toyota Altis Grande</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>6,799,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+
+        <div
+          class="car-container"
+          data-id="yaris"
+          onclick="goToDetails('yaris')"
+        >
+          <div class="car-image">
+            <img src="./images/yaris.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Toyota Yaris</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>4,799,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+
+        <div
+          class="car-container"
+          data-id="camry"
+          onclick="goToDetails('camry')"
+        >
+          <div class="car-image">
+            <img src="./images/camry.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Toyota Camry</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>5,799,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cars-conatiner suv">
+      <div class="car-slides">
+        <div
+          class="car-container"
+          data-id="lc300"
+          onclick="goToDetails('lc300')"
+        >
+          <div class="car-image grande">
+            <img src="./images/lc300.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Land Cruiser 300</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>6,30,99,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+
+        <div
+          class="car-container"
+          data-id="fortuner"
+          onclick="goToDetails('fortuner')"
+        >
+          <div class="car-image">
+            <img src="./images/fortuner.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Toyota Fortuner</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>9,799,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+
+        <div class="car-container" data-id="revo" onclick="goToDetails('revo')">
+          <div class="car-image">
+            <img src="./images/revo.png" alt="" srcset="" />
+          </div>
+          <div class="car-text">
+            <h1 class="name">Toyota Revo</h1>
+            <h2>Power,Prastige.Passion</h2>
+            <h1>Starting From <span>9,699,000</span></h1>
+            <a href="">See More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages-section">
+      <div class="section-title">
+        <h2>The Toyota Advantage</h2>
+        <p>Why millions of people trust us every day</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="icon-box">🛡️</div>
+          <h3>Unmatched Reliability</h3>
+          <p>
+            Our vehicles are built to last. With legendary durability, Toyota
+            remains the top choice for long-term ownership and high resale
+            value.
+          </p>
+          <a href="#" class="read-more">Learn More</a>
+        </div>
+
+        <div class="advantage-card">
+          <div class="icon-box">🌱</div>
+          <h3>Beyond Zero</h3>
+          <p>
+            We are leading the way in electrification and sustainable mobility,
+            aiming for carbon neutrality across our entire vehicle lifecycle.
+          </p>
+          <a href="#" class="read-more">Learn More</a>
+        </div>
+
+        <div class="advantage-card">
+          <div class="icon-box">⚙️</div>
+          <h3>Smart Technology</h3>
+          <p>
+            From Safety Sense to Hybrid Synergy Drive, we integrate cutting-edge
+            tech that makes your drive safer and more efficient.
+          </p>
+          <a href="#" class="read-more">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="toyota-footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>SHOWROOM</h3>
+          <ul>
+            <li><a href="cars.html">Corolla Altis X</a></li>
+            <li><a href="cars.html">Yaris</a></li>
+            <li><a href="cars.html">Corolla Cross</a></li>
+            <li><a href="cars.html">Fortuner</a></li>
+            <li><a href="cars.html">Hilux Revo</a></li>
+            <li><a href="cars.html">Land Cruiser</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>AFTER SALES</h3>
+          <ul>
+            <li><a href="#">Toyota Genuine Parts</a></li>
+            <li><a href="#">Periodic Maintenance</a></li>
+            <li><a href="#">Warranty Policy</a></li>
+            <li><a href="#">Toyota Direct Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CORPORATE</h3>
+          <ul>
+            <li><a href="#">Company Profile</a></li>
+            <li><a href="career.html">Careers</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column contact-info">
+          <h3>CONNECT WITH US</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.facebook.com/nwooyy.zain/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+          <p>Customer Relations: 0800-11123</p>
+        </div>
+      </div>
+
+      <div class="footer-botom">
+        <p>&copy; 2026 Indus Motor Company Limited. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

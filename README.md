@@ -1,0 +1,2 @@
+# Toyota Indus
+A high-fidelity, responsive recreation of the Toyota Indus official website. This project focuses on replicating the premium aesthetic and complex UI components of the automotive industry. Key features include a custom-built responsive navigation system, dynamic image sliders for featured vehicle models (like the Corolla Grande and Fortuner), and a structured layout optimized for various screen sizes using CSS Media Queries.

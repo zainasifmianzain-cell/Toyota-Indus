@@ -1,0 +1,138 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.sale-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.sale-text h2 {
+  color: red;
+  font-size: 2rem;
+  padding: 20px;
+  margin-top: 60px;
+}
+.sale-text h1 {
+  font-size: 2.5rem;
+  color: black;
+  padding: 30px;
+}
+.para p {
+  padding: 20px;
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+.sale-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partner img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+.trust-partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.product-container {
+  width: 200px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #eef0f2;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy, organic feel */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-logo i {
+  font-size: 2.5rem;
+  color: #0d3069;
+  transition: transform 0.4s ease;
+}
+
+.product-dis h1 {
+  font-size: 1.25rem;
+  font-family: "Inter", sans-serif;
+  color: #1f2937;
+  margin-top: 1.5rem;
+}
+
+.product-container:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-color: #113877;
+}
+
+.product-container:hover .product-logo i {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+@media (max-width: 450px) {
+  .sale-text h2 {
+    color: red;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-top: 35px;
+  }
+  .sale-text h1 {
+    font-size: 2rem;
+    color: black;
+    padding: 20px;
+  }
+  .para p {
+    padding: 10px;
+    max-width: 700px;
+    margin-bottom: 40px;
+  }
+  .partner img {
+    height: 120px;
+    width: 120px;
+  }
+  .trust-partners {
+    gap: 16px;
+  }
+
+  .product-container {
+    padding: 0.8rem;
+    width: 150px;
+  }
+  .product-logo i {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .product-dis h1 {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+  .products {
+    gap: 12px;
+  }
+}
